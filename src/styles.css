@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+.dark-mode {
+    --primary-color: #3B1E54;
+    --secondary-color: #F7EFE5;
+}
+.light-mode{
+    --primary-color: #F7EFE5;
+    --secondary-color:#3B1E54;
+}
+:root {
+    --primary-color: #3B1E54;
+    --secondary-color: #F7EFE5;
+    --terciary-color: #C8A1E0;
+}
+body{
+    font-family: 'Kanit', sans-serif;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+mat-select{
+    border-radius: 20px;
+}
+mat-option{
+    border-radius: 20px;
+}
+mat-form-field {
+    width: 200px;
+    border-radius: 20px;
+    height: 45px;
+    background-color: #C8A1E0;
+}
+.mat-mdc-form-field-subscript-wrapper{
+    height: 0px;
+    border-radius: 20px;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

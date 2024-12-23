@@ -1,0 +1,21 @@
+<div class="container-headbar">
+    <div class="container-logo">
+      <mat-icon color="primary" class="logo"></mat-icon>
+      <span>La ruta del código</span>
+    </div>
+    <div class="container-options">
+      <mat-form-field>
+        <mat-label>Seniority</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let op of options" [value]="op" (onSelectionChange)="changeOption(op)">{{ op.value }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Temas</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let to of topics" [value]="to">{{ to.value }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  
