@@ -1,4 +1,15 @@
 <div class="content">
     <h1>Codificación</h1>
-    <p></p>
+    <p>Para empezar a resolver retos de desarrollo, debes iniciar por conocer los conceptos básicos del lenguaje de programación y el framework que vas a usar. En este caso nos enfocaremos en el uso de Angular, por lo cual debemos tener claras las bases de TypeScript, HTML, CSS, Angular CLI, estructura de un proyecto en angular, directivas estructurales y atributivas, entre muchos otros conceptos y temas.</p>
+    <ul class="steps">
+        <li class="step" *ngFor="let topic of topics" (click)="selectTopic(topic)">
+            {{ topic.value }}
+        </li>
+    </ul>
+    <div class="content__topics">
+        <div class="topic" *ngFor="let topic of topics">
+          <h2 [id]="getTopicId(topic)">{{ topic.value }}</h2>
+          <p>{{ topic.description }}</p>
+        </div>
+      </div>
 </div>

@@ -14,13 +14,15 @@ import { TraineePageComponent } from './pages/trainee-page/trainee-page.componen
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { CodeComponent } from './components/trainee-folder/code/code.component';
+import { IndexComponent } from './pages/index/index.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadbarComponent,
     TraineePageComponent,
-    CodeComponent
+    CodeComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,

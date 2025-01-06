@@ -50,8 +50,13 @@ mat-icon{
     background-image: url('../../../assets/images/trainee/steps_11352361.png');
 }
 .content{
-    animation-name: fadeIn;
-    animation-duration: 4s;
+    /* animation-name: fadeIn; */
+    /* animation-duration: 4s; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
 }
 @keyframes fadeIn {
     0% {
