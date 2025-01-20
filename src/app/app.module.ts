@@ -15,6 +15,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { CodeComponent } from './components/trainee-folder/code/code.component';
 import { IndexComponent } from './pages/index/index.component';
+import { AngularBasicComponent } from './components/angular-basic/angular-basic.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { IndexComponent } from './pages/index/index.component';
     HeadbarComponent,
     TraineePageComponent,
     CodeComponent,
-    IndexComponent
+    IndexComponent,
+    AngularBasicComponent
   ],
   imports: [
     BrowserModule,

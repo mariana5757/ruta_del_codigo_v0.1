@@ -15,6 +15,9 @@ body{
     font-family: 'Kanit', sans-serif;
     /* animation-name: fadeIn;
     animation-duration: 4s; */
+    a:hover{
+        font-weight: bold;
+    }
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

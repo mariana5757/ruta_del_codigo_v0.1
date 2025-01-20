@@ -28,4 +28,10 @@
         align-items: center;
         gap: 20px;
     }
+    .mdc-text-field--filled{
+        --mdc-filled-text-field-active-indicator-height: 12px;
+    }
+    .mdc-text-field--filled:not(.mdc-text-field--disabled){
+        background-color: yellow;
+    }
 }
