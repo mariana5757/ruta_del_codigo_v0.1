@@ -11,7 +11,7 @@
           </div>
     </div>
     <div class="content">
-        <app-code *ngIf="idContent === 1" class="content"></app-code>
+        <app-code *ngIf="idContent === 1" class="content" [idContent]="isUp"></app-code>
         <!-- <app-version *ngIf="idContent === 2"></app-version>
         <app-graphics *ngIf="idContent === 3"></app-graphics>
         <app-frameworks *ngIf="idContent === 4"></app-frameworks>
@@ -19,4 +19,7 @@
         <app-communication *ngIf="idContent === 6"></app-communication>
         <app-principles *ngIf="idContent === 7"></app-principles> -->
     </div>
+</div>
+<div class="up" (click)="selectUp()">
+    <img class="up-img" src="../../../assets/images/up.png" alt="">
 </div>

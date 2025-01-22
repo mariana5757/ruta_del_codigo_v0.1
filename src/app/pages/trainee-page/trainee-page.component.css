@@ -68,3 +68,19 @@ mat-icon{
         transform: translateY(0);
     }
 }
+.up{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: var(--terciary-color) 0px 0px 10px 1px;
+    .up-img{
+        width: 80%;
+    }
+}

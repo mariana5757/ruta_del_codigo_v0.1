@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-trainee-page',
@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./trainee-page.component.css']
 })
 export class TraineePageComponent {
-  cards = [
+  isUp = 2;
+    cards = [
     { id:1, title: 'Codificación', icon: 'code' },
     { id:2, title: 'Versionamiento', icon: 'version-control' },
     { id:3, title: 'Estilos gráficos UI', icon: 'graphics' },
@@ -20,5 +21,9 @@ export class TraineePageComponent {
   
   selectCard(card: any) {
     this.idContent = card.id;
+  }
+
+  selectUp() {
+    this.isUp = this.isUp === 2 ? 1 : 2;
   }
 }

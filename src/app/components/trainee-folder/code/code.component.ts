@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-code',
@@ -38,6 +38,8 @@ export class CodeComponent {
       description: 'En esta sección encontraremos ejercicios y desafios para practicar y mejorar tus conocimientos sobre Angular, utilizando todos los conceptos anteriores.'},
   ]
 
+  @Input() idContent: number = 2;
+
   getTopicId(topic: { id: number; value: string }): string {
     return topic.value.replace(/\s+/g, '-').toLowerCase();
   }
@@ -49,4 +51,20 @@ export class CodeComponent {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (this.idContent === 1 || this.idContent === 2) {
+      this.idContent = 3;
+      this.scrollToTop();
+    }
+  }
+
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  constructor() {}
 }
