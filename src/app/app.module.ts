@@ -15,7 +15,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { CodeComponent } from './components/trainee-folder/code/code.component';
 import { IndexComponent } from './pages/index/index.component';
-import { AngularBasicComponent } from './components/angular-basic/angular-basic.component';
+import { AngularBasicComponent } from './atoms/angular-basic/angular-basic.component';
+import { EstructureAngularComponent } from './atoms/estructure-angular/estructure-angular.component';
+import { StructuralAtributiveDirectivesComponent } from './atoms/structural-atributive-directives/structural-atributive-directives.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { AngularBasicComponent } from './components/angular-basic/angular-basic.
     TraineePageComponent,
     CodeComponent,
     IndexComponent,
-    AngularBasicComponent
+    AngularBasicComponent,
+    EstructureAngularComponent,
+    StructuralAtributiveDirectivesComponent
   ],
   imports: [
     BrowserModule,
