@@ -18,6 +18,8 @@ import { IndexComponent } from './pages/index/index.component';
 import { AngularBasicComponent } from './atoms/angular-basic/angular-basic.component';
 import { EstructureAngularComponent } from './atoms/estructure-angular/estructure-angular.component';
 import { StructuralAtributiveDirectivesComponent } from './atoms/structural-atributive-directives/structural-atributive-directives.component';
+import { VersioningComponent } from './components/trainee-folder/versioning/versioning.component';
+import { InitialConfigGitComponent } from './atoms/initial-config-git/initial-config-git.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { StructuralAtributiveDirectivesComponent } from './atoms/structural-atri
     IndexComponent,
     AngularBasicComponent,
     EstructureAngularComponent,
-    StructuralAtributiveDirectivesComponent
+    StructuralAtributiveDirectivesComponent,
+    VersioningComponent,
+    InitialConfigGitComponent
   ],
   imports: [
     BrowserModule,

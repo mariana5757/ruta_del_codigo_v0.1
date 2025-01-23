@@ -52,19 +52,5 @@ export class CodeComponent {
     }
   }
 
-  ngOnChanges(changes: SimpleChanges): void {
-    if (this.idContent === 1 || this.idContent === 2) {
-      this.idContent = 3;
-      this.scrollToTop();
-    }
-  }
-
-  scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  }
-
   constructor() {}
 }

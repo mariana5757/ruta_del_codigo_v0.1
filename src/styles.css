@@ -18,6 +18,26 @@ body{
     a:hover{
         font-weight: bold;
     }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 80%;
+        h1{
+            color: var(--primary-color);
+        }
+        .steps{
+            width: 90%;
+        }
+        .step{
+            cursor: pointer;
+        }
+        .step:hover{
+            color: var(--terciary-color);
+            font-weight: bold;
+        }
+    }
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

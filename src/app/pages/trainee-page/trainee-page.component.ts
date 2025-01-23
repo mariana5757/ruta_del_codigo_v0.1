@@ -7,6 +7,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class TraineePageComponent {
   isUp = 2;
+  cardActive = {};
     cards = [
     { id:1, title: 'Codificación', icon: 'code' },
     { id:2, title: 'Versionamiento', icon: 'version-control' },
@@ -17,13 +18,18 @@ export class TraineePageComponent {
     { id:7, title: 'Principios de software', icon: 'principles' }
   ];
   
-  idContent = 1;
+  //cambiar a 1 cuando termine todo
+  idContent = 2;
   
   selectCard(card: any) {
     this.idContent = card.id;
+    this.cardActive = card;
   }
 
   selectUp() {
-    this.isUp = this.isUp === 2 ? 1 : 2;
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
   }
 }
