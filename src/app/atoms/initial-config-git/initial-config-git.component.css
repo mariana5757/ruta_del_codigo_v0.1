@@ -1,0 +1,21 @@
+h4{
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+    text-align: center;
+}
+h3{
+    color: var(--primary-color);
+    text-align: center;
+}
+.config{
+    width: 50%;
+}
+.video{
+    width: 100%;
+    text-align: center;
+}
+.images{
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,25 @@
+<app-headbar></app-headbar>
+<div class="container-trainee">
+    <div class="slider">
+        <div class="slider-container">
+            <div class="card-slider">
+                <div class="card" *ngFor="let card of cards" (click)="selectCard(card)" [ngClass]="{'select-card': card === cardActive}">
+                  <mat-icon class="{{card.icon}}"></mat-icon>
+                  <span>{{ card.title }}</span>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div class="content">
+        <app-code *ngIf="idContent === 1" class="content" [idContent]="isUp"></app-code>
+        <app-versioning *ngIf="idContent === 2" class="content"></app-versioning> 
+        <!--<app-graphics *ngIf="idContent === 3"></app-graphics>
+        <app-frameworks *ngIf="idContent === 4"></app-frameworks>
+        <app-logic *ngIf="idContent === 5"></app-logic>
+        <app-communication *ngIf="idContent === 6"></app-communication>
+        <app-principles *ngIf="idContent === 7"></app-principles> -->
+    </div>
+</div>
+<div class="up" (click)="selectUp()">
+    <img class="up-img" src="../../../assets/images/up.png" alt="">
+</div>

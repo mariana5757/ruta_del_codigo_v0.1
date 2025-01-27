@@ -1,0 +1,33 @@
+<div class="content">
+    <h1>Codificación</h1>
+    <p>Para empezar a resolver retos de desarrollo, debes iniciar por conocer los conceptos básicos del lenguaje de programación y el framework que vas a usar. En este caso nos enfocaremos en el uso de Angular, por lo cual debemos tener claras las bases de TypeScript, HTML, CSS, Angular CLI, estructura de un proyecto en angular, directivas estructurales y atributivas, entre muchos otros conceptos y temas.</p>
+    <ul class="steps">
+        <li class="step" *ngFor="let topic of topics" (click)="selectTopic(topic)">
+            {{ topic.value }}
+          </li>
+        </ul>
+        <div class="content__topics">
+          <div class="topic" *ngFor="let topic of topics">
+            <h2 [id]="getTopicId(topic)">{{ topic.value }}</h2>
+            <p>{{ topic.description }}</p>
+            <div class="image" *ngIf="topic.image">
+              <img class="img" src="{{ topic.image }}" alt="ejemplo">
+            </div>
+            <div *ngIf="topic.id == 2" class="video">
+              <p>En este caso es importante que si no tienes noción de TypeScript te puedas guiar y aprender con toda la información que se encuentra en docuemntacion oficial, tutoriales, libros, etc... Te dejo este video de MoureDev by Brais Moure, para que puedas iniciar este camino.</p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/4W3UWjyyVkQ?si=fPADIwUl4nHSyehU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="link" *ngIf="topic.id == 3">
+              <p>Aquí tienes la documentación oficial de Angular. Encontrarás todo lo necesario para comenzar a desarrollar con Angular</p>
+              <a href="https://angular.dev" target="_blank">angular.dev</a>
+              <app-angular-basic></app-angular-basic>
+            </div>
+            <div class="code" *ngIf="topic.id == 4">
+              <app-estructure-angular></app-estructure-angular>
+            </div>
+            <div class="code" *ngIf="topic.id == 5">
+              <app-structural-atributive-directives></app-structural-atributive-directives>
+            </div>
+        </div>
+      </div>
+</div>

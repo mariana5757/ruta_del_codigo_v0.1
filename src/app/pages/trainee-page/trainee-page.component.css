@@ -1,0 +1,89 @@
+.card-slider {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    gap: 10px;
+    padding: 0 10px;
+}
+  
+.card {
+    max-width: 200px;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+}
+.select-card{
+    box-shadow: var(--terciary-color) 0px 0px 15px 2px;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: var(--terciary-color) 0px 0px 15px 2px;
+}
+mat-icon{
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
+.code{
+    background-image: url('../../../assets/images/trainee/code_2172806.png');
+}
+.version-control{
+    background-image: url('../../../assets/images/trainee/path_9534024.png');
+}
+.graphics{
+    background-image: url('../../../assets/images/trainee/graphic-tablet_7754610.png');
+}
+.framework{
+    background-image: url('../../../assets/images/trainee/angular.png');
+}
+.logic{
+    background-image: url('../../../assets/images/trainee/adaptability_12278583.png');
+}
+.communication{
+    background-image: url('../../../assets/images/trainee/data_1400014.png');
+}
+.principles{
+    background-image: url('../../../assets/images/trainee/steps_11352361.png');
+}
+.content{
+    /* animation-name: fadeIn; */
+    /* animation-duration: 4s; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.up{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: var(--terciary-color) 0px 0px 10px 1px;
+    .up-img{
+        width: 80%;
+    }
+}

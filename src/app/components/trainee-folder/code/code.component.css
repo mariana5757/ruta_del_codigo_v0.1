@@ -1,0 +1,38 @@
+.content{
+    .steps{
+        width: 90%;
+    }
+    .step{
+        cursor: pointer;
+    }
+    .step:hover{
+        color: var(--terciary-color);
+        font-weight: bold;
+    }
+}
+.content__topics{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .topic{
+        width: 100%;
+    }
+    .link{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        font-size: 18px;
+    }
+    .video{
+        width: 100%;
+        text-align: center;
+    }
+    .image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .img{
+            width: 70%;
+        }
+    }
+}

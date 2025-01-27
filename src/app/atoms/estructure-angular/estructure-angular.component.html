@@ -1,0 +1,47 @@
+<div>
+    <p>En la imagen podemos apreciar la estructura con la que se creará el proyecto de angular.</p>
+    <ul>
+        <li>
+            <h4>node_modules</h4>
+            <p>Es la carpeta que contiene todas las dependencias de nuestro proyecto, es decir todas las librerias que
+                usaremos.</p>
+        </li>
+        <li>
+            <h4>src</h4>
+            <p>es la carpeta que contiene nuestro proyecto, donde encontramos el código, los componentes, servicios,
+                etc... En esta carpeta se encuentra la carpeta app, allí crearemos los componentes de nuestra
+                aplicación, podemos separarlos segun el tamaño del componente o la complejidad del mismo.</p>
+            <p>Lo ideal es mantener un orden y una estructura clara, para mejorar la gestión del proyecto.</p>
+        </li>
+        <li>
+            <h4>assets</h4>
+            <p>Es la carpeta que contiene todos los recursos estaticos que usaremos en nuestro proyecto, como imagenes,
+                estilos, fuentes, etc...</p>
+        </li>
+        <li>
+            <h4>index.html</h4>
+            <p>Es el archivo HTML base de la aplicación, donde Angular renderiza la aplicación.</p>
+            <p>En la linea 15 podemos ver la etiqueta app-root, esta etiqueta le indica a angular que allí se
+                renderizara el componente principal de nuestra aplicación.</p>
+            <img class="img" src="../../../assets/images/trainee/index.JPG" alt="">
+        </li>
+        <li>
+            <h4>app.routing.module.ts</h4>
+            <p>Es el archivo de configuración de las rutas de nuestra aplicación, por ejemplo en este caso para la ruta
+                raiz le decimos que renderice el componente IndexComponent, y para la ruta 'dominio/trainee' le decimos
+                que renderice el componente TraineePageComponent.</p>
+            <p>En este archivo también podemos configurar los guards, que son funciones que se ejecutan antes de
+                renderizar el componente, para permitir o no el acceso a ciertas rutas. Por ejemplo si no se esta
+                logueado o si no tiene cierto rol.</p>
+            <img class="img" src="../../../assets/images/trainee/rutas.JPG" alt="">
+        </li>
+        <li>
+            <h4>app.module.ts</h4>
+            <p>es el corazón de la configuración de nuestra aplicación en Angular. En este archivo se importan y declaran los módulos, componentes, servicios y otros elementos necesarios para que la aplicación     funcione correctamente, como librerias externas.</p>
+            <p>
+                Es importante destacar que AppModule actúa como el módulo raíz de la aplicación, y es donde organizamos los módulos principales que utilizaremos. Aunque podemos crear tantos módulos como necesitemos para dividir nuestra aplicación en partes más manejables, es fundamental ser cuidadosos con las importaciones para evitar redundancias o conflictos entre módulos.</p>
+            <img class="img" src="../../../assets/images/trainee/module.JPG" alt="">
+        </li>
+    </ul>
+    <p>En resumen estas son las carpetas y los archivos que más utilizaremos durante el desarrollo de nuestra aplicación.</p>
+</div>
