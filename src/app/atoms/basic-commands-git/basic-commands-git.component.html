@@ -1,0 +1,76 @@
+<div>
+    <p>En git podemos gestionar, rastrear y revertir cambios, y muchas cosas más. Para ello vamos a revisar algunos comandos basicos de git, que te ayudarán a gestionar tu proyecto de manera eficiente.</p>
+    <ul>
+        <li>
+            <h4>git clone URL-del-repositorio</h4>
+            <p>Crea una copia local de un repositorio en tu computadora. URL-del-repositorio es la URL del repositorio que quieres clonar. Cuando ya tengas la copia local, si tienes permisos, puedes empezar a trabajar con ella y colaborar con otros desarrolladores o subir cambios al repositorio original.</p>
+        </li>
+        <li>
+            <h4>git init</h4>
+            <p>Inicializa un repositorio Git en tu proyecto. Creando una carpeta oculta llamada .git, donde se almacenan los archivos de control de versiones.</p>
+        </li>
+        <li>
+            <h4>git status</h4>
+            <p>Verifica el estado de tu proyecto. Muestra los archivos modificados, no modificados, o los archivos que no existen en el repositorio.</p>
+            <p>Por ejemplo en la imagen vemos los archivos donde dice "changes to be committed", son aquellos que han sido modificados y añadidos al área de preparación (staging area) con el comando git add. Estos cambios están listos para ser incluidos en el siguiente commit, pero aún no han sido confirmados (committed).</p>
+            <p>Tenemos los archivos "changes not staged for commit" son aquellos que han sido modificados pero no se han añadido al área de preparación, por lo que no serán parte del próximo commit a menos que uses git add para incluirlos.</p>
+            <p>Y tenemos "untraked files" son aquellos que no han sido modificados y no se han incluido en el área de preparación, Git te está diciendo que hay archivos en tu directorio que aún no han sido añadidos al área de preparación (staging area).</p>
+            <div class="container-img">
+                <img src="../../../assets/images/trainee/git-status.JPG" alt="">
+            </div>
+        </li>
+        <li>
+            <h4>git log --oneline --graph --all</h4>
+            <p>Muestra un resumen de los commits realizados en el repositorio de forma compacta y en árbol.</p>
+            <p>En la imagen vemos un ejemplo de un resumen de commits, cada linea representa un commit.</p>
+            <div class="container-img">
+                <img src="../../../assets/images/trainee/git-log-oneline.JPG" alt="">
+            </div>
+            <ul>
+                <li>
+                    <p>* f9caa50 (HEAD -> development, origin/development) feature: versionamiento</p>
+                    <p>Esta línea indica que actualmente estas en la rama development (HEAD) y origin/development significa que development también existe en el repositorio remoto</p>
+                    <p>feature: versionamiento es el nombre del commit</p>
+                </li>
+                <li>
+                    <p>La parte amarilla indica el ID del commit (los primeros 7 caracteres del hash).</p>
+                </li>
+                <li>
+                    <p>La parte blanca indica el mensaje del commit describiendo los cambios</p>
+                </li>
+                <li>
+                    <p>* 9faf9af (origin/main, main) initial commit</p>
+                    <p>9faf9af es el hash del commit, main es la rama principal, origin/main significa que main tambien existe en el repositorio remoto.</p>
+                </li>
+            </ul>
+            <h4>Resumen</h4>
+            <p>main es la rama principal (origin/main, main).
+                development es una rama creada desde main y está más adelantada.
+                Se han hecho varios commits en development con cambios en trainee, headbar y scroll.
+                El último commit (f9caa50) incluye versionamiento.
+                development está sincronizado con origin/development.</p>
+        </li>
+        <li>
+            <h4>git add</h4>
+            <p>Añade los archivos modificados al área de preparación (staging area). Los archivos modificados se mueven de la carpeta de trabajo a la zona de preparación, para ser incluidos en el siguiente commit.</p>
+            <p>Si usamos <strong>git add .</strong> se anadirán todos los archivos modificados en la carpeta de trabajo.</p>
+            <p>Si usamos <strong>git add nombre-del-archivo</strong> se anadirán todos los archivos modificados en la carpeta de trabajo y subcarpetas.</p>
+        </li>
+        <li>
+            <h4>git commit</h4>
+            <p>Confirma los cambios realizados en la zona de preparación (staging area), lo ideal es usar un mensaje corto y claro para que el commit sea legible.</p>
+            <p>En mi caso personal primero pongo el tipo de cambio que se subirá y luego la descripcion del cambio.</p>
+            <div class="container-img">
+                <img class="img" src="../../../assets/images/trainee/commits-estructura.JPG" alt="">
+            </div>
+            <p>Por ejemplo <strong>git commit -m "feature: nuevo componente versionamiento"</strong></p>
+            <p>Si quieres modificar el último commit (y aun no has usado git push) puedes usar <strong>git commit --amend -m "feature: nuevo componente versionamiento y funcionalidad de versionamiento"</strong></p>
+        </li>
+        <li>
+            <h4>git push</h4>
+            <p>Envía el contenido de la zona de preparación (staging area) hacia el repositorio remoto.</p>
+            <p>Si usamos <strong>git push</strong> subimos los cambios en la rama que estamos trabajando.</p>
+            <p>Si usamos <strong>git push origin development</strong> subimos los cambios en la rama development en el repositorio remoto.</p>
+        </li>
+    </ul>
+</div>

@@ -20,6 +20,7 @@ import { EstructureAngularComponent } from './atoms/estructure-angular/estructur
 import { StructuralAtributiveDirectivesComponent } from './atoms/structural-atributive-directives/structural-atributive-directives.component';
 import { VersioningComponent } from './components/trainee-folder/versioning/versioning.component';
 import { InitialConfigGitComponent } from './atoms/initial-config-git/initial-config-git.component';
+import { BasicCommandsGitComponent } from './atoms/basic-commands-git/basic-commands-git.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { InitialConfigGitComponent } from './atoms/initial-config-git/initial-co
     EstructureAngularComponent,
     StructuralAtributiveDirectivesComponent,
     VersioningComponent,
-    InitialConfigGitComponent
+    InitialConfigGitComponent,
+    BasicCommandsGitComponent
   ],
   imports: [
     BrowserModule,
