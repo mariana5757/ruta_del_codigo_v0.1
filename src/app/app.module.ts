@@ -21,6 +21,7 @@ import { StructuralAtributiveDirectivesComponent } from './atoms/structural-atri
 import { VersioningComponent } from './components/trainee-folder/versioning/versioning.component';
 import { InitialConfigGitComponent } from './atoms/initial-config-git/initial-config-git.component';
 import { BasicCommandsGitComponent } from './atoms/basic-commands-git/basic-commands-git.component';
+import { GitFlowComponent } from './atoms/git-flow/git-flow.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { BasicCommandsGitComponent } from './atoms/basic-commands-git/basic-comm
     StructuralAtributiveDirectivesComponent,
     VersioningComponent,
     InitialConfigGitComponent,
-    BasicCommandsGitComponent
+    BasicCommandsGitComponent,
+    GitFlowComponent
   ],
   imports: [
     BrowserModule,

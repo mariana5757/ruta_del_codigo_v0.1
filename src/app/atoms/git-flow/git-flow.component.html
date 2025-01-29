@@ -1,0 +1,37 @@
+<div>
+    <p>Git Flow es un modelo de flujo de trabajo basado en Git que define una estructura clara para gestionar ramas en un proyecto. Fue propuesto por Vincent Driessen y es muy útil en equipos grandes o proyectos con lanzamientos frecuentes.</p>
+    <p>Se basa en el uso de ramas específicas con propósitos definidos, lo que facilita la colaboración y la organización del código.</p>
+    <p>En Git Flow tenemos 6 tipos de ramas principales:</p>
+    <ul>
+        <h3>Ramas públicadas en ambientes:</h3>
+        <li>
+            <h4>master o main</h4>
+            <p>Es la rama principal y contiene código listo para producción. Nunca se trabaja directamente en esta rama.</p>
+        </li>
+        <li>
+            <h4>development</h4>
+            <p>Es la rama base donde se integran nuevas características antes de ir a producción. Contiene código funcional pero aún no completamente probado. Todas las nuevas funcionalidades parten de aquí.</p>
+        </li>
+        <li>
+            <h4>release</h4>
+            <p>Es la rama donde se realizan las pruebas de las funcionalidades, esta rama es la que se fusiona en main para subir a producción. Contiene código funcional y probado.</p>
+        </li>
+        <h3>Ramas creadas por el equipo de desarrollo:</h3>
+        <li>
+            <h4>feature</h4>
+            <p>Esta rama parte de la rama development y es la que se usa para desarrollar nuevas funcionalidades, generalmente la acompaña un ID de ticket o de HU, por ejemplo <strong>feature/HU-123</strong></p>
+        </li>
+        <li>
+            <h4>bugfix</h4>
+            <p>Esta rama parte de la rama release y es la que se usa para corregir errores, generalmente la acompañan un ID de ticket o de HU, por ejemplo <strong>bugfix/BUG-123</strong> Cuando se realizan las correciones debe integrarse con release y development</p>
+        </li>
+        <li>
+            <h4>hotfix</h4>
+            <p>Esta rama parte de la rama main y es la que se usa para corregir errores de producción, generalmente la acompañan un ID de ticket o de HU, por ejemplo <strong>hotfix/BUG-123</strong> Esta rama se integra con main, release y finalmente con development</p>
+        </li>
+    </ul>
+    <div class="container-img">
+        <img src="../../../assets/images/trainee/git-flow.png" alt="">
+    </div>
+    <p>Existen muchos más módelos de flujo de trabajo, como Trunk-Based, Feature-Based, OneFlow,  etc., Depende de la necesidad de tu equipo.</p>
+</div>
