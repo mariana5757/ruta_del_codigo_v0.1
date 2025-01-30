@@ -27,11 +27,15 @@ body{
         h1{
             color: var(--primary-color);
         }
+        h4{
+            color: var(--primary-color);
+        }
         .steps{
             width: 90%;
         }
         .step{
             cursor: pointer;
+            list-style: square;
         }
         .step:hover{
             color: var(--terciary-color);

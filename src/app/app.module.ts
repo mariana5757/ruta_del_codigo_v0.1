@@ -22,6 +22,8 @@ import { VersioningComponent } from './components/trainee-folder/versioning/vers
 import { InitialConfigGitComponent } from './atoms/initial-config-git/initial-config-git.component';
 import { BasicCommandsGitComponent } from './atoms/basic-commands-git/basic-commands-git.component';
 import { GitFlowComponent } from './atoms/git-flow/git-flow.component';
+import { GraphicStylesComponent } from './components/trainee-folder/graphic-styles/graphic-styles.component';
+import { FrameworksComponent } from './components/trainee-folder/frameworks/frameworks.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { GitFlowComponent } from './atoms/git-flow/git-flow.component';
     VersioningComponent,
     InitialConfigGitComponent,
     BasicCommandsGitComponent,
-    GitFlowComponent
+    GitFlowComponent,
+    GraphicStylesComponent,
+    FrameworksComponent
   ],
   imports: [
     BrowserModule,

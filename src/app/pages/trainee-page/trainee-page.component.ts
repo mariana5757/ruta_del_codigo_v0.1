@@ -18,12 +18,13 @@ export class TraineePageComponent {
     { id:7, title: 'Principios de software', icon: 'principles' }
   ];
   
-  //cambiar a 1 cuando termine todo
-  idContent = 2;
+  
+  idContent = 1;
   
   selectCard(card: any) {
     this.idContent = card.id;
     this.cardActive = card;
+    localStorage.setItem('idContent', this.idContent.toString());
   }
 
   selectUp() {
@@ -31,5 +32,9 @@ export class TraineePageComponent {
         top: 0,
         behavior: 'smooth'
       });
+  }
+
+  ngOnInit(){
+    this.idContent = localStorage.getItem('idContent') ? parseInt(localStorage.getItem('idContent')!, 10) : 1;
   }
 }
