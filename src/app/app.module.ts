@@ -24,6 +24,7 @@ import { BasicCommandsGitComponent } from './atoms/basic-commands-git/basic-comm
 import { GitFlowComponent } from './atoms/git-flow/git-flow.component';
 import { GraphicStylesComponent } from './components/trainee-folder/graphic-styles/graphic-styles.component';
 import { FrameworksComponent } from './components/trainee-folder/frameworks/frameworks.component';
+import { ProgrammingLogicComponent } from './components/trainee-folder/programming-logic/programming-logic.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { FrameworksComponent } from './components/trainee-folder/frameworks/fram
     BasicCommandsGitComponent,
     GitFlowComponent,
     GraphicStylesComponent,
-    FrameworksComponent
+    FrameworksComponent,
+    ProgrammingLogicComponent
   ],
   imports: [
     BrowserModule,
