@@ -16,12 +16,21 @@
     flex-direction: column;
     .topic{
         width: 100%;
+        @media screen and (max-width: 920px) {
+            width: 90%;
+        }
+    }
+    @media screen and (max-width: 920px) {
+        gap: 50px;
     }
     .link{
         width: 100%;
         justify-content: center;
         text-align: center;
         font-size: 18px;
+        @media screen and (max-width: 920px) {
+            width: 100%;
+        }
     }
     .video{
         width: 100%;

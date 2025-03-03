@@ -4,6 +4,9 @@
     grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
     gap: 10px;
     padding: 0 10px;
+    @media screen and (max-width: 960px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
   
 .card {
@@ -16,6 +19,9 @@
     padding: 10px;
     border: 2px solid var(--primary-color);
     border-radius: 20px;
+    @media screen and (max-width: 600px) {
+        font-size: 14px;
+    }
 }
 .select-card{
     box-shadow: var(--terciary-color) 0px 0px 15px 2px;
@@ -30,6 +36,10 @@ mat-icon{
     height: 50px;
     width: 50px;
     margin-left: 10px;
+    @media screen and (max-width: 600px) {
+        height: 20px;
+        width: 20px;
+    }
 }
 .code{
     background-image: url('../../../assets/images/trainee/code_2172806.png');
@@ -85,5 +95,10 @@ mat-icon{
     box-shadow: var(--terciary-color) 0px 0px 10px 1px;
     .up-img{
         width: 80%;
+    }
+    @media screen and (max-width: 920px) {
+        z-index: 10;
+        border: 1px solid var(--primary-color);
+        background-color: #fff;
     }
 }

@@ -2,3 +2,9 @@ code{
     color: var(--primary-color);
     font-weight: bold;
 }
+.content{
+    @media screen and (max-width: 920px) {
+        width: 90%;
+        margin-bottom: 25%;
+    }
+}
