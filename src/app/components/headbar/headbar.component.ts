@@ -11,7 +11,7 @@ export class HeadbarComponent {
   constructor(private router: Router) {}
 
   options = [{id:0, value:'Trainee'}, {id:1, value:'Junior'}, {id:2, value:'Advanced'}];
-  topics = [{id:0, value:'Frontend'}, {id:1, value:'Backend'}, {id:2, value:'Fullstack'}];
+  topics = [{id:0, value:'ngRx'}];
 
   changeOption(option: any){
     switch (option.id) {

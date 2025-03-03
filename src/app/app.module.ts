@@ -25,6 +25,8 @@ import { GitFlowComponent } from './atoms/git-flow/git-flow.component';
 import { GraphicStylesComponent } from './components/trainee-folder/graphic-styles/graphic-styles.component';
 import { FrameworksComponent } from './components/trainee-folder/frameworks/frameworks.component';
 import { ProgrammingLogicComponent } from './components/trainee-folder/programming-logic/programming-logic.component';
+import { CommunicationComponent } from './components/trainee-folder/communication/communication.component';
+import { SoftwarePrinciplesComponent } from './components/trainee-folder/software-principles/software-principles.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { ProgrammingLogicComponent } from './components/trainee-folder/programmi
     GitFlowComponent,
     GraphicStylesComponent,
     FrameworksComponent,
-    ProgrammingLogicComponent
+    ProgrammingLogicComponent,
+    CommunicationComponent,
+    SoftwarePrinciplesComponent
   ],
   imports: [
     BrowserModule,

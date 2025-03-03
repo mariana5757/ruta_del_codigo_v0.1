@@ -1,0 +1,71 @@
+<div class="content">
+    <h1>Frameworks, librerias y otros</h1>
+    <div class="content-main">
+        <p>En aplicaciones web modernas, necesitamos comunicarnos con servidores o APIs externas para obtener datos o guardar información. Esta es la base de lo que se llama persistencia: guardar información de manera que no se pierda cuando la aplicación se cierre o recargue.
+    
+        En Angular, podemos usar el servicio HttpClient para manejar esta comunicación con el servidor y la persistencia de datos. Para ello, se utilizan los métodos GET y POST (además de otros como PUT, DELETE).</p>
+        <ul class="steps">
+            <li class="step" *ngFor="let topic of topics" (click)="selectTopic(topic)">
+                {{ topic.value }}
+            </li>
+        </ul>
+        <div class="content__topics">
+            <div class="topic" *ngFor="let topic of topics">
+                <h2 [id]="getTopicId(topic)">{{ topic.value }}</h2>
+                <p>{{ topic.description }}</p>
+                <div *ngIf="topic.id == 0">
+                    <ul>
+                        <li>
+                            <h4>GET</h4>
+                            <p>El metodo GET se utiliza para obtener informacion de un servidor. Por ejemplo, para obtener informacion de una API y poderla mostrar en nuestro front.</p>
+                        </li>
+                        <li>
+                            <h4>POST</h4>
+                            <p>El método POST por su parte se usa para el envío de información, por ejemplo cuando llenamos un formulario<./p>
+                        </li>
+                    </ul>
+                </div>
+                <div *ngIf="topic.id == 1">
+                    <p>Una API (Interfaz de Programación de Aplicaciones, por sus siglas en inglés) es un conjunto de reglas y herramientas que permiten que diferentes aplicaciones o sistemas se comuniquen entre sí. Es como un puente que permite que dos aplicaciones intercambien información de manera estructurada, sin necesidad de que una conozca los detalles internos de la otra.</p>
+                </div>
+                <div *ngIf="topic.id == 2">
+                    <p>Para crear este servicio vamos a utilizar una API pública <a href="https://huachitos.cl/api/animales/tipo/perro" target="_blank">huachitos.cl</a> esta Api nos proporciona información sobre perritos, como nombre, edad, personalidad y una imagen.</p>
+                    <p>Lo inicial es crear el servicio en nuestra app de angular, creamos una carpeta llamada <strong class="strong">services</strong> y dentro de ella creamos un archivo llamado <strong class="strong">fake-store.service.ts</strong> este servicio se crea con el comando <strong>ng generate service fake-store.service</strong></p>
+                    <p>Asi debería verse hasta ahora:</p>
+                    <div class="container-img">
+                        <img src="../../../../assets/images/trainee/service.png" alt="">
+                    </div>
+                    <p>Según la documentación de la API, la url de la api es https://huachitos.cl/api/animales/tipo/perro desde esa ruta vamos a consumir la información de los perros.</p>
+                    <p>En el servicio que acabamos de crear, generamos una funcion que es la que se va a encargar de consumir la información de la api.</p>
+                    <div class="container-img">
+                        <img src="../../../../assets/images/trainee/service2.png" alt="">
+                    </div>
+                </div>
+                <div *ngIf="topic.id == 3">
+                    <p>Ahora lo que vamos a hacer es llamar este servicio desde nuestro componente.</p>
+                    <p>En este ejemplo se creó un componente con el nombre service-component, ya que se supone que es una página de adopción.</p>
+                    <div class="container-img">
+                        <img src="../../../../assets/images/trainee/service3.png" alt="">
+                    </div>
+                    <p>Como puedes observar, se importa el servicio, se inyecta en el constructor, se crea una función para llamar el servicio y guardarlo en la variable dogs. Este servicio se llama en el ngOnInit para que lo haga cuando se inicie el componente.</p>
+                    <p>Si ispeccionamos en el momento de llamar el servicio podemos ver la estrucura del JSON que nos devuelve la API</p>
+                    <div class="container-img">
+                        <img src="../../../../assets/images/trainee/service5.png" alt="">
+                    </div>
+                    <p>Teniendo clara la estructura ya podemos manipular la información que nos devuelve la API</p>
+                    <div class="container-img">
+                        <img src="../../../../assets/images/trainee/service4.png" alt="">
+                    </div>
+                    <p>Logrando un resultado como el siguiente</p>
+                    <div class="container-img">
+                        <img src="../../../../assets/images/trainee/service6.png" alt="">
+                    </div>
+                </div>
+                <div *ngIf="topic.id == 4">
+                    <h1>VIDEO</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
