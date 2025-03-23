@@ -1,18 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 .dark-mode {
-    --primary-color: #3B1E54;
+    --primary-color: #6428C1;
     --secondary-color: #F7EFE5;
 }
 .light-mode{
     --primary-color: #F7EFE5;
-    --secondary-color:#3B1E54;
+    --secondary-color:#6428C1;
 }
 :root {
-    --primary-color: #3B1E54;
+    --primary-color: #6428C1;
     --secondary-color: #F7EFE5;
     --terciary-color: #C8A1E0;
 }
 body{
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
     /* animation-name: fadeIn;
     animation-duration: 4s; */
     a:hover{
