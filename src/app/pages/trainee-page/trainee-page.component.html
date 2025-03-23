@@ -4,7 +4,7 @@
         <div class="slider-container">
             <div class="card-slider">
                 <div class="card" *ngFor="let card of cards" (click)="selectCard(card)" [ngClass]="{'select-card': card === cardActive}">
-                  <mat-icon class="{{card.icon}}"></mat-icon>
+                  <!-- <mat-icon class="{{card.icon}}"></mat-icon> -->
                   <span>{{ card.title }}</span>
                 </div>
             </div>
