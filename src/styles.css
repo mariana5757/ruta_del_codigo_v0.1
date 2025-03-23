@@ -15,8 +15,6 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    /* animation-name: fadeIn;
-    animation-duration: 4s; */
     a:hover{
         font-weight: bold;
     }
