@@ -6,6 +6,9 @@
     color: white;
     font-family: 'Poppins', sans-serif;
     justify-content: center;
+    @media screen and (max-width: 960px) {
+        height: max-content;
+    }
     .container-logo{
         display: flex;
         align-items: center;
@@ -22,6 +25,10 @@
             width: 30px;
             margin-left: 10px;
             cursor: pointer;
+            @media screen and (max-width: 960px) {
+                height: 25px;
+                width: 25px;
+            }
         }
     }
     .container-options{
@@ -33,7 +40,9 @@
         justify-content: space-around;
         border-radius: 0 0 40px 40px;
         @media screen and (max-width: 960px) {
-            width: 50%;
+            width: 60%;
+            font-size: 13px;
+            display: grid;
         }
     }
     .mdc-text-field--filled{
