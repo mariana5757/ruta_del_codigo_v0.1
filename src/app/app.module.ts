@@ -27,6 +27,8 @@ import { FrameworksComponent } from './components/trainee-folder/frameworks/fram
 import { ProgrammingLogicComponent } from './components/trainee-folder/programming-logic/programming-logic.component';
 import { CommunicationComponent } from './components/trainee-folder/communication/communication.component';
 import { SoftwarePrinciplesComponent } from './components/trainee-folder/software-principles/software-principles.component';
+import { JuniorPageComponent } from './pages/junior-page/junior-page.component';
+import { CodeJuniorComponent } from './components/junior-folder/code-junior/code-junior.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { SoftwarePrinciplesComponent } from './components/trainee-folder/softwar
     FrameworksComponent,
     ProgrammingLogicComponent,
     CommunicationComponent,
-    SoftwarePrinciplesComponent
+    SoftwarePrinciplesComponent,
+    JuniorPageComponent,
+    CodeJuniorComponent
   ],
   imports: [
     BrowserModule,

@@ -57,6 +57,10 @@
         cursor: pointer;
         color: white;
     }
+    .Junior{
+        cursor: pointer;
+        color: white;
+    }
     /* .mdc-text-field--filled:not(.mdc-text-field--disabled){
         background-color: yellow;
     } */

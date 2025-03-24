@@ -1,0 +1,15 @@
+<app-headbar></app-headbar>
+<div class="container">
+    <div class="card-slider">
+        <div class="card" *ngFor="let card of cards" (click)="selectCard(card)"
+            [ngClass]="{'select-card': card === cardActive}">
+            <span>{{ card.title }}</span>
+        </div>
+    </div>
+    <div class="content">
+        <app-code-junior *ngIf="idContent === 1" class="content"></app-code-junior>
+    </div>
+</div>
+<div class="up" (click)="selectUp()">
+    <img class="up-img" src="../../../assets/images/up.png" alt="">
+</div>

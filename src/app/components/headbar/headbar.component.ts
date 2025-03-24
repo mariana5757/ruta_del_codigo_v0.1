@@ -19,6 +19,7 @@ export class HeadbarComponent {
         this.router.navigate(['/trainee']);
         break;
       case 1:
+        this.router.navigate(['/junior']);
         break;
       case 2:
         break;
