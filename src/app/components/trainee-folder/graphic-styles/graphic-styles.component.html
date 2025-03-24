@@ -1,7 +1,9 @@
 <div class="content">
     <h1>Estilos gráficos UI</h1>
     <div class="content-main">
-        <p>En esta sección vamos a aprender sobre los estilos gráficos de la interfaz de usuario. Para garantizar una presentación óptima, se aplican técnicas de maquetación responsive, adaptando los elementos a diversos tamaños de pantalla.</p>
+        <p>En esta sección vamos a aprender sobre los estilos gráficos de la interfaz de usuario. Para garantizar una
+            presentación óptima, se aplican técnicas de maquetación responsive, adaptando los elementos a diversos
+            tamaños de pantalla.</p>
         <ul class="steps">
             <li class="step" *ngFor="let topic of topics" (click)="selectTopic(topic)">
                 {{ topic.value }}
@@ -9,37 +11,62 @@
         </ul>
         <div class="content__topics">
             <div class="topic" *ngFor="let topic of topics">
-              <h2 [id]="getTopicId(topic)">{{ topic.value }}</h2>
-              <p>{{ topic.description }}</p>
-              <div *ngIf="topic.id == 0">
-                <ul>
-                    <li>
-                        <h4>Bootstrap</h4>
-                        <p>Bootstrap es una biblioteca de herramientas de código abierto para desarrollar interfaces de usuario basadas en HTML y CSS.</p>
-                        <h1>VIDEO</h1>
-                    </li>
-                    <li>
-                        <h4>Material Design</h4>
-                        <p>Material Design es una biblioteca de herramientas de código abierto para desarrollar interfaces de usuario basadas en HTML y CSS.</p>
-                        <h1>VIDEO</h1>
-                    </li>
-                </ul>
-              </div>
-              <div *ngIf="topic.id == 1">
-                <p>Algunos de los ejemplos de propiedades CSS para diseño responsive son:</p>
-                <ul>
-                    <li>width - height</li>
-                    <li>max-width - min-width</li>
-                    <li>max-height - min-height</li>
-                    <li>rem - em</li>
-                    <li>viewport units</li>
-                    <li>flexbox - grid</li>
-                    <li>media queries</li>
-                    <li>object-fit - object-position</li>
-                </ul>
-                <p>Aquí te explico como hacer uso de estas propiedades:</p>
-                <h1>VIDEO</h1>
-              </div>
+                <h2 [id]="getTopicId(topic)">{{ topic.value }}</h2>
+                <p>{{ topic.description }}</p>
+                <div *ngIf="topic.id == 0">
+                    <ul>
+                        <li>
+                            <h4>Bootstrap</h4>
+                            <p>Bootstrap es un framework de código abierto para diseñar y desarrollar aplicaciones web
+                                responsivas y móviles. Fue creado por Twitter y es ampliamente utilizado por
+                                desarrolladores para agilizar la creación de interfaces web atractivas y funcionales.
+                            </p>
+                            <p>Maneja un sistema de grillas y una biblioteca de componentes preconstruidos, solo debemos
+                                hacer uso de sus clases para utilizar sus estilos.</p>
+                            <h4>Principales caracteristicas de Bootstrap</h4>
+                            <ul>
+                                <li>Sistema de grillas, utiliza un sistema de 12 columnas que facilita la creación de
+                                    diseños responsivos.</li>
+                                <li>Componentes: Incluye una variedad de componentes predefinidos como botones, alertas,
+                                    tarjetas, modales, formularios, y más.</li>
+                                <li>Utilidades CSS: Provee clases para espaciado, alineación, colores, sombras, y otros
+                                    estilos sin necesidad de escribir CSS personalizado.</li>
+                                <li>JavaScript Integrado: Viene con plugins de JavaScript para agregar interactividad,
+                                    como carruseles, menús desplegables y tooltips.</li>
+                                <li>Personalización: Puedes personalizarlo usando variables Sass o sobrescribir sus
+                                    estilos con CSS.</li>
+                            </ul>
+                            <div class="video">
+                                <iframe width="760" height="415"
+                                    src="https://www.youtube.com/embed/x7r8hN_m7uc?si=4duAv_zJgCrA5jlS"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>Material Design</h4>
+                            <p>Material Design es una biblioteca de herramientas de código abierto para desarrollar
+                                interfaces de usuario basadas en HTML y CSS.</p>
+                            <h1>VIDEO</h1>
+                        </li>
+                    </ul>
+                </div>
+                <div *ngIf="topic.id == 1">
+                    <p>Algunos de los ejemplos de propiedades CSS para diseño responsive son:</p>
+                    <ul>
+                        <li>width - height</li>
+                        <li>max-width - min-width</li>
+                        <li>max-height - min-height</li>
+                        <li>rem - em</li>
+                        <li>viewport units</li>
+                        <li>flexbox - grid</li>
+                        <li>media queries</li>
+                        <li>object-fit - object-position</li>
+                    </ul>
+                    <p>Aquí te explico como hacer uso de estas propiedades:</p>
+                    <h1>VIDEO</h1>
+                </div>
             </div>
         </div>
     </div>

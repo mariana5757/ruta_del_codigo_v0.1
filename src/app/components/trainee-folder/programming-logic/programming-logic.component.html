@@ -2,7 +2,8 @@
     <h1>Lógica de programación</h1>
     <div class="content-main">
         <p>La lógica de programación es fundamental para crear algoritmos eficientes y funcionales. Los conceptos clave
-            dentro de la lógica de programación incluyen las sentencias condicionales y los iteradores, que permiten tomar
+            dentro de la lógica de programación incluyen las sentencias condicionales y los iteradores, que permiten
+            tomar
             decisiones y realizar repeticiones dentro de un programa.</p>
         <ul class="steps">
             <li class="step" *ngFor="let topic of topics" (click)="selectTopic(topic)">
@@ -20,8 +21,10 @@
                     </div>
                 </div>
                 <div *ngIf="topic.id == 1">
-                    <p>En el caso del switch dependemos del valor que tome una variable, por ejemplo en este caso verifica
-                        el valor de la variable <strong>color</strong> dependiendo del case que cumpla es la acción que se
+                    <p>En el caso del switch dependemos del valor que tome una variable, por ejemplo en este caso
+                        verifica
+                        el valor de la variable <strong>color</strong> dependiendo del case que cumpla es la acción que
+                        se
                         va a realizar, en este caso entra en el priemr case, por lo cual no va a verificar el resto de
                         cases.</p>
                     <p>En caso de no tener un case que cumpla se va a ejecutar el default.</p>
@@ -30,22 +33,28 @@
                     </div>
                 </div>
                 <div *ngIf="topic.id == 2">
-                    <p>El iterador for permite ejecutar un bloque de instrucciones un determinado numero de veces, en este
+                    <p>El iterador for permite ejecutar un bloque de instrucciones un determinado numero de veces, en
+                        este
                         caso vamos a recorrer una lista de números para sumarlos.</p>
                     <p>En las listas empezamos en la posición 0, por eso tenemos que el for empieza en el valor 0
-                        <strong>let i = 0</strong> esta parte del for indica el valor en el que va a empezar el for, en este
-                        caso empieza en 0.</p>
-                    <p>El for termina cuando la condición se cumple, en este caso el for termina cuando <strong>i</strong>
+                        <strong>let i = 0</strong> esta parte del for indica el valor en el que va a empezar el for, en
+                        este
+                        caso empieza en 0.
+                    </p>
+                    <p>El for termina cuando la condición se cumple, en este caso el for termina cuando
+                        <strong>i</strong>
                         sea menor que la longitud de la lista <strong>numbers.length</strong>.</p>
                     <p>El for incrementa la variable <strong>i</strong> en 1, en este caso <strong>i++</strong>.</p>
-                    <p>Mientras vamos ejecutando el for, se va a ir acumulando la suma en la variable <strong>suma</strong>.
+                    <p>Mientras vamos ejecutando el for, se va a ir acumulando la suma en la variable
+                        <strong>suma</strong>.
                     </p>
                     <div class="container-img">
                         <img src="../../../../assets/images/trainee/for.JPG" alt="">
                     </div>
                 </div>
                 <div *ngIf="topic.id == 3">
-                    <p>Realizando el mismo ejemplo pero esta vez con un while, vemos que la estructura es un poco diferente,
+                    <p>Realizando el mismo ejemplo pero esta vez con un while, vemos que la estructura es un poco
+                        diferente,
                         pero cumple la misma función.</p>
                     <p>El while se ejecuta mientras la condición se cumpla, en este caso mientras <strong>i</strong> sea
                         menor que la longitud de la lista <strong>numbers.length</strong>.</p>
@@ -54,11 +63,15 @@
                     </div>
                 </div>
                 <div *ngIf="topic.id == 4">
-                    <p>do-while es un poco diferente, en casos como for y while, se revisa ANTES de iterar si la condición
-                        de cumple, es decir que puede que nunca entre al ciclo. En el caso del do-while se ejecuta el bloque
+                    <p>do-while es un poco diferente, en casos como for y while, se revisa ANTES de iterar si la
+                        condición
+                        de cumple, es decir que puede que nunca entre al ciclo. En el caso del do-while se ejecuta el
+                        bloque
                         al menos una vez, y luego se revisa si la condición se cumple.</p>
-                    <p>Es decir, en este caso realizará la primera suma sin importar si <strong>i</strong> es menor o mayor
-                        que la longitud de la lista <strong>numbers.length</strong>. Luego de realizar esa primera suma si
+                    <p>Es decir, en este caso realizará la primera suma sin importar si <strong>i</strong> es menor o
+                        mayor
+                        que la longitud de la lista <strong>numbers.length</strong>. Luego de realizar esa primera suma
+                        si
                         empezamos a validar la condición.</p>
                     <div class="container-img">
                         <img src="../../../../assets/images/trainee/do-while.JPG" alt="">
@@ -68,7 +81,8 @@
                     <p>Este método recorre cada elemento del arreglo numeros y ejecuta la función proporcionada por cada
                         elemento.</p>
                     <p>Este ciclo recorre directamente las listas o arreglos, en este caso la variable
-                        <strong>number</strong> va a tomar el valor de cada elemento de la lista <strong>numbers</strong>.
+                        <strong>number</strong> va a tomar el valor de cada elemento de la lista
+                        <strong>numbers</strong>.
                     </p>
                     <div class="container-img">
                         <img src="../../../../assets/images/trainee/for-each.JPG" alt="">
@@ -77,9 +91,11 @@
                 <div *ngIf="topic.id == 6">
                     <p>Estos iteradores pueden ser usados para recorrer listas, arreglos o conjuntos. Por ejemplo map,
                         filter, reduce, some, every, find, findIndex, findLast, findLastIndex, includes, sort, etc..</p>
-                    <p>Estas funciones se usan para realizar operaciones en las listas o arreglos, como encontrar elementos,
+                    <p>Estas funciones se usan para realizar operaciones en las listas o arreglos, como encontrar
+                        elementos,
                         modificar ciertos elementos, eliminar, filtrar, etc..</p>
-                        <h1>VIDEO</h1>
+                    <h4><a href="https://lenguajejs.com/javascript/arrays/array-functions/" target="_blank">Ejemplos de
+                            iteradores</a></h4>
                 </div>
                 <div *ngIf="topic.id == 7">
                     <ul>
@@ -102,8 +118,13 @@
                             <h4><a href="https://projecteuler.net" target="_blank">Project Euler</a></h4>
                         </li>
                     </ul>
-                    <p>Entre muchisimas otras plataformas para practicar programación, estas plataformas ofrecen una gran cantidad de ejercicios de programación, desde problemas fáciles hasta difíciles, cubriendo temas como estructuras de datos, algoritmos, y más. Es excelente para practicar lógica de programación y resolución de problemas complejos. Puedes resolver problemas en varios lenguajes, desde los más comunes como JavaScript, Python, hasta otros menos populares.</p>
-                    <p>Te permiten recibir retroalimentación de mentores experimentados, maratones de codificación, y competencias de algoritmos, para que pongas a prueba tus habilidades.</p>
+                    <p>Entre muchisimas otras plataformas para practicar programación, estas plataformas ofrecen una
+                        gran cantidad de ejercicios de programación, desde problemas fáciles hasta difíciles, cubriendo
+                        temas como estructuras de datos, algoritmos, y más. Es excelente para practicar lógica de
+                        programación y resolución de problemas complejos. Puedes resolver problemas en varios lenguajes,
+                        desde los más comunes como JavaScript, Python, hasta otros menos populares.</p>
+                    <p>Te permiten recibir retroalimentación de mentores experimentados, maratones de codificación, y
+                        competencias de algoritmos, para que pongas a prueba tus habilidades.</p>
                 </div>
             </div>
         </div>
