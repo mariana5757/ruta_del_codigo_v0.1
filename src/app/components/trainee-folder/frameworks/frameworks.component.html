@@ -1,0 +1,29 @@
+<div class="content">
+    <h1>Frameworks, librerias y otros</h1>
+    <div class="content-main">
+        <ul class="steps">
+            <li class="step" *ngFor="let topic of topics" (click)="selectTopic(topic)">
+                {{ topic.value }}
+            </li>
+        </ul>
+        <div class="content__topics">
+            <div class="topic" *ngFor="let topic of topics">
+              <h2 [id]="getTopicId(topic)">{{ topic.value }}</h2>
+              <p>{{ topic.description }}</p>
+              <div *ngIf="topic.id == 1">
+                <p>Estos componentes pueden ser:</p>
+                <ul>
+                    <li>Menús de navegación</li>
+                    <li>Paginadores</li>
+                    <li>Footers</li>
+                    <li>Headers</li>
+                    <li>Barras de búsqueda</li>
+                </ul>
+              </div>
+              <div *ngIf="topic.id == 2">
+                <h1>VIDEO</h1>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+.container-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 70%;
+}
+.video{
+    width: 100%;
+    text-align: center;
+}

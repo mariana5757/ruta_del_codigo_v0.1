@@ -1,0 +1,18 @@
+.container-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 60%;
+}
+.content{
+    width: 100%;
+    @media screen and (max-width: 920px) {
+        width: 90%;
+    }
+}
+.content-main{
+    width: 90%;
+}

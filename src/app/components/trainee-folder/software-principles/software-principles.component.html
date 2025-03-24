@@ -1,0 +1,33 @@
+<div class="content">
+    <h1>Principios de software</h1>
+    <div class="content-main">
+        <p>En Angular (y en TypeScript en general), el uso consciente del tipado de variables está directamente
+            relacionado con varios principios de software que ayudan a mejorar la mantenibilidad del proyecto. Vamos a
+            desglosarlo con algunos principios clave:</p>
+    </div>
+    <ul class="steps">
+        <li class="step" *ngFor="let topic of topics" (click)="selectTopic(topic)">
+            {{ topic.value }}
+        </li>
+    </ul>
+    <div class="content__topics">
+        <div class="topic" *ngFor="let topic of topics">
+            <h2 [id]="getTopicId(topic)">{{ topic.value }}</h2>
+            <p>{{ topic.description }}</p>
+            <div *ngIf="topic.id == 0">
+                <ul>
+                    <h4>Tipos de variables en TypeScript</h4>
+                    <li *ngFor="let type of typesVariables">
+                        <p>{{ type.type }}: {{ type.description }}</p>
+                    </li>
+                </ul>
+                <p>El tipado de variables nos ayuda a identificar y prevenir problemas de tipado en nuestro código. Por
+                    ejemplo: </p>
+                <img class="image" src="../../../../assets/images/trainee/error_tipado.JPG" alt="">
+                <p>En este caso TypeScript parará la ejecución cuando intente ejecutar el la operación matematica con un string y no con un number.</p>
+                <p>Lo ideal es realizar un tipado correcto, en este caso se generó una interface, la cual es una forma de definir la estructura de un objeto sin especificar su implementación.</p>
+                <img class="image" src="../../../../assets/images/trainee/tipado-bien.JPG" alt="">
+            </div>
+        </div>
+    </div>
+</div>

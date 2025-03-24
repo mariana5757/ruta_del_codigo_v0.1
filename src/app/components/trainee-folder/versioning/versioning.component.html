@@ -1,19 +1,31 @@
 <div class="content">
     <h1>Versionamiento</h1>
-    <p>El versionamieto es el proceso de controlar la evolución y cambios en los proyectos, es una herramienta importante para el desarrollo de software. Para este proceso vamos a utilizar GIT, ya que es una herramienta muy utilizada y muy práctica.
-    Con GIT manejamos usuarios, ramas, commits, pull requests, cherry picks, etc.
-    </p>
-    <ul class="steps">
-        <li class="step" *ngFor="let topic of topics" (click)="selectTopic(topic)">
-            {{topic.value}}
-        </li>
-    </ul>
-    <div class="content__topics">
-        <div class="topic" *ngFor="let topic of topics">
-            <h2 [id]="getTopicId(topic)">{{topic.value}}</h2>
-            <p>{{topic.description}}</p>
-            <div *ngIf="topic.id == 2">
-                <app-initial-config-git></app-initial-config-git>
+    <div class="content-main">
+        <p>El versionamieto es el proceso de controlar la evolución y cambios en los proyectos, es una herramienta importante para el desarrollo de software. Para este proceso vamos a utilizar GIT, ya que es una herramienta muy utilizada y muy práctica.
+        Con GIT manejamos usuarios, ramas, commits, pull requests, cherry picks, etc.
+        </p>
+        <ul class="steps">
+            <li class="step" *ngFor="let topic of topics" (click)="selectTopic(topic)">
+                {{topic.value}}
+            </li>
+        </ul>
+        <div class="content__topics">
+            <div class="topic" *ngFor="let topic of topics">
+                <h2 [id]="getTopicId(topic)">{{topic.value}}</h2>
+                <p>{{topic.description}}</p>
+                <div *ngIf="topic.id == 2">
+                    <app-initial-config-git></app-initial-config-git>
+                </div>
+                <div *ngIf="topic.id == 3">
+                    <app-basic-commands-git></app-basic-commands-git>
+                </div>
+                <div *ngIf="topic.id == 4">
+                    <p>En este video te muestro un poco de la resolución de conflictos en git</p>
+                    <h1>VIDEO</h1>
+                </div>
+                <div *ngIf="topic.id == 5">
+                    <app-git-flow></app-git-flow>
+                </div>
             </div>
         </div>
     </div>

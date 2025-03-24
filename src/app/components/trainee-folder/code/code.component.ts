@@ -33,9 +33,6 @@ export class CodeComponent {
     {id:6, 
       value:'Debugging en Angular', 
       description: 'Debugging en Angular se refiere al proceso de identificar y corregir errores en tu aplicación. Angular, como framework, ofrece varias herramientas y enfoques que facilitan la depuración durante el desarrollo. Podemos debuggear utilizando console.log(), ver los mensajes de error en la consola del navegador, utilizar herramientas como la herramienta de depuración de Angular, entre otras.'},
-    {id:7, 
-      value:'Retos en angular (Material audiovisual)', 
-      description: 'En esta sección encontraremos ejercicios y desafios para practicar y mejorar tus conocimientos sobre Angular, utilizando todos los conceptos anteriores.'},
   ]
 
   @Input() idContent: number = 2;

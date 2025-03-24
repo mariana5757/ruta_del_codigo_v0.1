@@ -1,4 +1,5 @@
 .content{
+    width: 100%;
     .steps{
         width: 90%;
     }
@@ -9,6 +10,12 @@
         color: var(--terciary-color);
         font-weight: bold;
     }
+    @media screen and (max-width: 960px) {
+        width: 90%;
+    }
+}
+.content-main{
+    width: 90%;
 }
 .content__topics{
     display: flex;
@@ -16,12 +23,21 @@
     flex-direction: column;
     .topic{
         width: 100%;
+        @media screen and (max-width: 920px) {
+            width: 90%;
+        }
+    }
+    @media screen and (max-width: 920px) {
+        gap: 50px;
     }
     .link{
         width: 100%;
         justify-content: center;
         text-align: center;
         font-size: 18px;
+        @media screen and (max-width: 920px) {
+            width: 100%;
+        }
     }
     .video{
         width: 100%;
@@ -32,7 +48,7 @@
         display: flex;
         justify-content: center;
         .img{
-            width: 70%;
+            width: 50%;
         }
     }
 }

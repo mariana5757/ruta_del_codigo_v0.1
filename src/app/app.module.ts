@@ -20,6 +20,13 @@ import { EstructureAngularComponent } from './atoms/estructure-angular/estructur
 import { StructuralAtributiveDirectivesComponent } from './atoms/structural-atributive-directives/structural-atributive-directives.component';
 import { VersioningComponent } from './components/trainee-folder/versioning/versioning.component';
 import { InitialConfigGitComponent } from './atoms/initial-config-git/initial-config-git.component';
+import { BasicCommandsGitComponent } from './atoms/basic-commands-git/basic-commands-git.component';
+import { GitFlowComponent } from './atoms/git-flow/git-flow.component';
+import { GraphicStylesComponent } from './components/trainee-folder/graphic-styles/graphic-styles.component';
+import { FrameworksComponent } from './components/trainee-folder/frameworks/frameworks.component';
+import { ProgrammingLogicComponent } from './components/trainee-folder/programming-logic/programming-logic.component';
+import { CommunicationComponent } from './components/trainee-folder/communication/communication.component';
+import { SoftwarePrinciplesComponent } from './components/trainee-folder/software-principles/software-principles.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +39,14 @@ import { InitialConfigGitComponent } from './atoms/initial-config-git/initial-co
     EstructureAngularComponent,
     StructuralAtributiveDirectivesComponent,
     VersioningComponent,
-    InitialConfigGitComponent
+    InitialConfigGitComponent,
+    BasicCommandsGitComponent,
+    GitFlowComponent,
+    GraphicStylesComponent,
+    FrameworksComponent,
+    ProgrammingLogicComponent,
+    CommunicationComponent,
+    SoftwarePrinciplesComponent
   ],
   imports: [
     BrowserModule,
