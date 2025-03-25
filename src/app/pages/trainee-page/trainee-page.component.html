@@ -1,25 +1,31 @@
 <app-headbar></app-headbar>
 <div class="container-trainee">
-    <div class="slider">
-        <div class="slider-container">
-            <div class="card-slider">
-                <div class="card" *ngFor="let card of cards" (click)="selectCard(card)" [ngClass]="{'select-card': card === cardActive}">
-                  <!-- <mat-icon class="{{card.icon}}"></mat-icon> -->
-                  <span>{{ card.title }}</span>
-                </div>
-            </div>
-          </div>
+  <div class="slider-container">
+    <button mat-icon-button (click)="prevSlide()" [disabled]="currentIndex === 0">
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+
+    <div class="card-slider">
+      <div class="card" *ngFor="let card of visibleCards" (click)="selectCard(card)"
+        [ngClass]="{'select-card': card === cardActive}">
+        <span>{{ card.title }}</span>
+      </div>
     </div>
-    <div class="content">
-        <app-code *ngIf="idContent === 1" class="content" [idContent]="isUp"></app-code>
-        <app-versioning *ngIf="idContent === 2" class="content"></app-versioning> 
-        <app-graphic-styles *ngIf="idContent === 3" class="content"></app-graphic-styles>
-        <app-frameworks *ngIf="idContent === 4" class="content"></app-frameworks>
-        <app-programming-logic *ngIf="idContent === 5" class="content"></app-programming-logic>
-        <app-communication *ngIf="idContent === 6"></app-communication>
-        <app-software-principles *ngIf="idContent === 7"></app-software-principles>
-    </div>
+
+    <button mat-icon-button (click)="nextSlide()" [disabled]="currentIndex + itemsPerPage >= cards.length">
+      <mat-icon>chevron_right</mat-icon>
+    </button>
+  </div>
+  <div class="content">
+    <app-code *ngIf="idContent === 1" class="content" [idContent]="isUp"></app-code>
+    <app-versioning *ngIf="idContent === 2" class="content"></app-versioning>
+    <app-graphic-styles *ngIf="idContent === 3" class="content"></app-graphic-styles>
+    <app-frameworks *ngIf="idContent === 4" class="content"></app-frameworks>
+    <app-programming-logic *ngIf="idContent === 5" class="content"></app-programming-logic>
+    <app-communication *ngIf="idContent === 6"></app-communication>
+    <app-software-principles *ngIf="idContent === 7"></app-software-principles>
+  </div>
 </div>
 <div class="up" (click)="selectUp()">
-    <img class="up-img" src="../../../assets/images/up.png" alt="">
+  <img class="up-img" src="../../../assets/images/up.png" alt="">
 </div>
