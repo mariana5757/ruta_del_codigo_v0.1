@@ -20,6 +20,14 @@ export class TraineePageComponent {
   
   
   idContent = 1;
+  visibleCards: any[] = [];
+  currentIndex = 0;
+  itemsPerPage = 5;
+
+  constructor() {
+    this.updateVisibleCards();
+    this.selectCard(this.cards[0]);
+  }
   
   selectCard(card: any) {
     this.idContent = card.id;
@@ -36,5 +44,22 @@ export class TraineePageComponent {
 
   ngOnInit(){
     this.idContent = localStorage.getItem('idContent') ? parseInt(localStorage.getItem('idContent')!, 10) : 1;
+  }
+  updateVisibleCards() {
+    this.visibleCards = this.cards.slice(this.currentIndex, this.currentIndex + this.itemsPerPage);
+  }
+
+  nextSlide() {
+    if (this.currentIndex + this.itemsPerPage < this.cards.length) {
+      this.currentIndex += this.itemsPerPage;
+      this.updateVisibleCards();
+    }
+  }
+
+  prevSlide() {
+    if (this.currentIndex - this.itemsPerPage >= 0) {
+      this.currentIndex -= this.itemsPerPage;
+      this.updateVisibleCards();
+    }
   }
 }

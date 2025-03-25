@@ -1,67 +1,62 @@
-.slider{
-    text-align: center;
-}
-.card-slider {
-    margin-top: 20px;
+.content {
+    width: 90%;
+  }
+  .card-slider {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
-    gap: 30px;
-    padding: 0 10px;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 2fr));
+    gap: 20px;
+    width: 70%;
+    text-align: center;
     @media screen and (max-width: 960px) {
-        grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
-}
+  }
+  .slider-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
-.card {
+  .card {
     max-width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 7px;
     border: 1.5px solid var(--primary-color);
     border-radius: 15px;
     font-size: 14px;
+    height: 20px;
     @media screen and (max-width: 600px) {
-        font-size: 12px;
+      font-size: 12px;
     }
-}
-.select-card{
+  }
+  .select-card {
     box-shadow: var(--terciary-color) 0px 0px 15px 2px;
-}
-.card:hover{
+  }
+  .card:hover {
     cursor: pointer;
     box-shadow: var(--terciary-color) 0px 0px 15px 2px;
-}
-mat-icon{
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 50px;
-    width: 50px;
-    margin-left: 10px;
-    @media screen and (max-width: 600px) {
-        height: 20px;
-        width: 20px;
-    }
-}
-
-.content{
+  }
+  .content {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2%;
-}
-@keyframes fadeIn {
+  }
+  @keyframes fadeIn {
     0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
+      opacity: 0;
+      transform: translateY(20px);
     }
-}
-.up{
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .up {
     width: 40px;
     height: 40px;
     position: fixed;
@@ -73,12 +68,13 @@ mat-icon{
     align-items: center;
     border-radius: 50%;
     box-shadow: var(--terciary-color) 0px 0px 10px 1px;
-    .up-img{
-        width: 80%;
+    .up-img {
+      width: 80%;
     }
     @media screen and (max-width: 920px) {
-        z-index: 10;
-        border: 1px solid var(--primary-color);
-        background-color: #fff;
+      z-index: 10;
+      border: 1px solid var(--primary-color);
+      background-color: #fff;
     }
-}
+  }
+  
