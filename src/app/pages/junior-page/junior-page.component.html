@@ -1,25 +1,11 @@
 <app-headbar></app-headbar>
 <div class="container">
-    <div class="slider-container">
-        <button mat-icon-button (click)="prevSlide()" [disabled]="currentIndex === 0">
-          <mat-icon>chevron_left</mat-icon>
-        </button>
-      
-        <div class="card-slider">
-          <div 
-            class="card" 
-            *ngFor="let card of visibleCards" 
-            (click)="selectCard(card)"
+    <div class="card-slider">
+        <div class="card" *ngFor="let card of cards" (click)="selectCard(card)"
             [ngClass]="{'select-card': card === cardActive}">
             <span>{{ card.title }}</span>
-          </div>
         </div>
-      
-        <button mat-icon-button (click)="nextSlide()" [disabled]="currentIndex + itemsPerPage >= cards.length">
-          <mat-icon>chevron_right</mat-icon>
-        </button>
-      </div>
-      
+    </div>
     <div class="content">
         <app-code-junior *ngIf="idContent === 1" class="content"></app-code-junior>
     </div>
